@@ -10,6 +10,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 		<style>
 			.csswewnetrzny {
 				border: 1px solid green;
@@ -23,16 +25,26 @@
 			.testfontgoogle {
 				font-family: "Lobster", sans-serif;
 			}
+			
+			
+			body {
+				background: url('background.png') no-repeat center/cover;
+				background-size: 100% 100%;
+			}
 		</style>
 	</head>
 	<body>
-		<center><h1>dupa.bydgoszcz.pl</h1></center>
-		<h2>Witaj na stronie <strong>dupa.bydgoszcz.pl</strong></h2>
-		<p>Jest to strona testowa, gdzie postaramy się, żeby można je było odtworzyć na każdym urządzeniu</p>
-		<b>Twoja przeglądarka:</b> 		
-		<script language="javascript">
-			document.write(navigator.userAgent);
-		</script>
+		<header>
+			<center><h1>dupa.bydgoszcz.pl</h1></center>
+			<h2>Witaj na stronie <strong>dupa.bydgoszcz.pl</strong></h2>
+			<p>Jest to strona testowa, gdzie postaramy się, żeby można je było odtworzyć na każdym urządzeniu</p>
+			<b>Twoja przeglądarka:</b> 		
+			<script language="javascript">
+				document.write(navigator.userAgent);
+			</script>
+			<br><a class="linki" href="https://github.com/matisio3/dvpa-bydgoszcz-pl">Source Code</a> - <a class="linki" href="/poprawnywyglad">Poprawny wygląd strony</a>
+		</header>
+		
 		<h2>Test css (zewnętrzny)</h2>
 		<div class="csszewnetrzny">
 			<p>Tutaj powinień być czarne obramowanie a w tle tego tekstu powinno być szare tło.</p>
@@ -46,6 +58,10 @@
 		<p>Po kliknięciu przycisk powinien się wyświetlić komunikat o poprawnym działaniu skryptu.</p>
 		<h2>Test javascript (wewnętrzny)</h2>
 		<p>Po kliknięciu przycisk powinien się wyświetlić komunikat o poprawnym działaniu skryptu.</p>
+		<h2>Test czcionki (host na stronie)</h2>
+		<p class="testfont">Ten tekst powinien zawierać czcionke <b>Quicksand</b></p>
+		<h2>Test czcionki (host google)</h2>
+		<p class="testfontgoogle">Ten tekst powinien zawierać czcionke <b>Lobster</b></p>
 		<button onclick="testjs2()">Przycisk</button>
 		<script>
 			function testjs2() {
@@ -80,13 +96,18 @@
 		<h2>Test wideo</h2>
 		 <video width="320" height="240" controls>
 			<source src="278750_tiny.mp4" type="video/mp4">
-			Your browser does not support the video tag.
+			Twoja przeglądarka nie wspiera wideo.
 		</video><br>
 		Film <a href="https://pixabay.com/pl/users/krym1964-46851258/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=278750">Karim TAFNA</a> z serwisu <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=278750">Pixabay</a>
-		<h2>Test czcionki (host na stronie)</h2>
-		<p class="testfont">Ten tekst powinien zawierać czcionke <b>Quicksand</b></p>
-		<h2>Test czcionki (host google)</h2>
-		<p class="testfontgoogle">Ten tekst powinien zawierać czcionke <b>Lobster</b></p>
+		<h2>Test YouTube wideo</h2>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/XH3Xu1-cvII?si=_mzR8YnJrWhRHdL9&amp;start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		<h2>Test Vimeo wideo</h2>
+		<div style="position:relative;"><iframe src="https://player.vimeo.com/video/347119375?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="width:560px;height:315px;" title="Sample Video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+		<h2>Test Facebook video</h2>
+		<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Finstagram%2Fvideos%2F544851408503250%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+		<footer>
+			<p style="position:relative;top:10px;text-align:center;">Strona stworzona przez <b>Matisio</b></p>
+		</footer>
 	</body>
 
 </html>
