@@ -6,11 +6,22 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<style>
 			.csswewnetrzny {
 				border: 1px solid green;
 				background-color: blue;
+			}
+			
+			.testfont {
+				font-family: "Quicksand", sans-serif;
+			}
+			
+			.testfontgoogle {
+				font-family: "Lobster", sans-serif;
 			}
 		</style>
 	</head>
@@ -18,6 +29,10 @@
 		<center><h1>dupa.bydgoszcz.pl</h1></center>
 		<h2>Witaj na stronie <strong>dupa.bydgoszcz.pl</strong></h2>
 		<p>Jest to strona testowa, gdzie postaramy się, żeby można je było odtworzyć na każdym urządzeniu</p>
+		<b>Twoja przeglądarka:</b> 		
+		<script language="javascript">
+			document.write(navigator.userAgent);
+		</script>
 		<h2>Test css (zewnętrzny)</h2>
 		<div class="csszewnetrzny">
 			<p>Tutaj powinień być czarne obramowanie a w tle tego tekstu powinno być szare tło.</p>
@@ -37,7 +52,41 @@
 				alert("Przycisk ze skryptem wewnętrznym działa poprawnie.")
 			}
 		</script>
+		 <table>
+		 <h2>Test tabelki</h2>
+		  <tr>
+			<th>Kraj</th>
+			<th>Województwo</th>
+			<th>Miasto</th>
+		  </tr>
+		  <tr>
+			<td>Polska</td>
+			<td>Mazowieckie</td>
+			<td>Warszawa</td>
+		  </tr>
+		  <tr>
+			<td>Polska</td>
+			<td>Małopolskie</td>
+			<td>Kraków</td>
+		  </tr>
+		</table> 
 		<script src="script.js"></script> 
+		<h2>Test webp</h2>
+		<img src="fish-9382908_640.webp"><br>
+		Obraz <a href="https://pixabay.com/pl/users/jackdrafahl-11600124/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9382908"> Jack Drafahl</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9382908"> Pixabay</a>
+		<h2>Test jpg</h2>
+		<img src="goose-9544312_640.jpg"><br>
+		Obraz <a href="https://pixabay.com/pl/users/juergen57bs-21559928/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9544312"> Jürgen</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9544312"> Pixabay</a>
+		<h2>Test wideo</h2>
+		 <video width="320" height="240" controls>
+			<source src="278750_tiny.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video><br>
+		Film <a href="https://pixabay.com/pl/users/krym1964-46851258/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=278750">Karim TAFNA</a> z serwisu <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=278750">Pixabay</a>
+		<h2>Test czcionki (host na stronie)</h2>
+		<p class="testfont">Ten tekst powinien zawierać czcionke <b>Quicksand</b></p>
+		<h2>Test czcionki (host google)</h2>
+		<p class="testfontgoogle">Ten tekst powinien zawierać czcionke <b>Lobster</b></p>
 	</body>
 
 </html>
