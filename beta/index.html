@@ -25,14 +25,17 @@
 			.testfontgoogle {
 				font-family: "Lobster", sans-serif;
 			}
+			
+			.icon {
+				border: 1px solid;
  
 		</style>
 	</head>
 	<body>
 		<header>
-			<center><h1>dupa.bydgoszcz.pl</h1></center>
-			<h2>Witaj na stronie <strong>dupa.bydgoszcz.pl</strong></h2>
-			<p>Jest to strona testowa, gdzie postaramy się, żeby można je było odtworzyć na każdym urządzeniu</p>
+			<center><img class="icon" src="/favicon.ico"><b style="font-size:50px;margin-left:15px;">dupa.bydgoszcz.pl</b></center>
+			<h2 style="float:left;">Witaj na stronie <strong>dupa.bydgoszcz.pl</strong></h2><img src="http://emots.yetihehe.com/1/hejka.gif" width="80">
+			<p style="clear:both;">Jest to strona testowa, gdzie postaramy się, żeby można je było odtworzyć na każdym urządzeniu</p>
 			<b>Twoja przeglądarka:</b> 		
 			<script language="javascript">
 				document.write(navigator.userAgent);
@@ -83,23 +86,38 @@
 		</table> 
 		<script src="script.js"></script> 
 		<h2>Test webp</h2>
-		<img src="fish-9382908_640.webp"><br>
-		Obraz <a href="https://pixabay.com/pl/users/jackdrafahl-11600124/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9382908"> Jack Drafahl</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9382908"> Pixabay</a>
+		<img src="kosmo1.webp" width="800"><br>
 		<h2>Test jpg</h2>
-		<img src="goose-9544312_640.jpg"><br>
-		Obraz <a href="https://pixabay.com/pl/users/juergen57bs-21559928/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9544312"> Jürgen</a> z <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=9544312"> Pixabay</a>
-		<h2>Test wideo</h2>
+		<img src="kosmo2.jpg" width="800"><br>
+		<h2>Test png</h2>
+		<img src="kosmo3.png" width="800">
+		<h2>Test svg (kod)</h2>
+		<svg width="150" height="100" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="80" cy="50" r="20" stroke="blue" stroke-width="2" fill="lightblue" />
+			Twoja przeglądarka nie wspiera inline SVG.
+		</svg>
+		<h2>Test svg (plik)</h2>
+		<img src="svg.svg">
+		<h2>Test wideo (AVC)</h2>
 		 <video width="320" height="240" controls>
-			<source src="278750_tiny.mp4" type="video/mp4">
+			<source src="testwideoavc.mp4" type="video/mp4">
 			Twoja przeglądarka nie wspiera wideo.
 		</video><br>
-		Film <a href="https://pixabay.com/pl/users/krym1964-46851258/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=278750">Karim TAFNA</a> z serwisu <a href="https://pixabay.com/pl//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=278750">Pixabay</a>
+		Music by <a href="https://pixabay.com/pl/users/dimmysad-48986751/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=345013">DIMMYSAD</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=345013">Pixabay</a><br>
+		<h2>Test wideo (HEVC)</h2>
+		 <video width="320" height="240" controls>
+			<source src="testwideohevc.mp4" type="video/mp4">
+			Twoja przeglądarka nie wspiera wideo.
+		</video><br>
+		Music by <a href="https://pixabay.com/pl/users/dimmysad-48986751/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=345013">DIMMYSAD</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=345013">Pixabay</a><br>
 		<h2>Test YouTube wideo</h2>
 		<iframe width="560" height="315" src="https://www.youtube.com/embed/XH3Xu1-cvII?si=_mzR8YnJrWhRHdL9&amp;start=9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 		<h2>Test Vimeo wideo</h2>
 		<div style="position:relative;"><iframe src="https://player.vimeo.com/video/347119375?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="width:560px;height:315px;" title="Sample Video"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-		<h2>Test Facebook video</h2>
+		<h2>Test Facebook wideo</h2>
 		<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Finstagram%2Fvideos%2F544851408503250%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+		<h2>Test cda wideo</h2>
+		<iframe src="http://ebd.cda.pl/620x395/4933108" width="620" height="395" style="border:none;" frameBorder="0" scrolling="no" allowfullscreen name="v2" allow="encrypted-media"></iframe>
 		<footer>
 			<p style="position:relative;top:10px;text-align:center;">Strona stworzona przez <b>Matisio</b></p>
 		</footer>
