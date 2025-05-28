@@ -1,0 +1,43 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>dupa.bydgoszcz.pl</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style>
+			.csswewnetrzny {
+				border: 1px solid green;
+				background-color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<center><h1>dupa.bydgoszcz.pl</h1></center>
+		<h2>Witaj na stronie <strong>dupa.bydgoszcz.pl</strong></h2>
+		<p>Jest to strona testowa, gdzie postaramy się, żeby można je było odtworzyć na każdym urządzeniu</p>
+		<h2>Test css (zewnętrzny)</h2>
+		<div class="csszewnetrzny">
+			<p>Tutaj powinień być czarne obramowanie a w tle tego tekstu powinno być szare tło.</p>
+		</div>
+		<h2>Test css (wewnętrzny)</h2>
+		<div class="csswewnetrzny">
+			<p>Tutaj powinień być zielone obramowanie a w tle tego tekstu powinno być niebieskie tło.</p>
+		</div>
+		<h2>Test javascript (zewnętrzny)</h2>
+		<button onclick="testjs1()">Przycisk</button>
+		<p>Po kliknięciu przycisk powinien się wyświetlić komunikat o poprawnym działaniu skryptu.</p>
+		<h2>Test javascript (wewnętrzny)</h2>
+		<p>Po kliknięciu przycisk powinien się wyświetlić komunikat o poprawnym działaniu skryptu.</p>
+		<button onclick="testjs2()">Przycisk</button>
+		<script>
+			function testjs2() {
+				alert("Przycisk ze skryptem wewnętrznym działa poprawnie.")
+			}
+		</script>
+		<script src="script.js"></script> 
+	</body>
+
+</html>
